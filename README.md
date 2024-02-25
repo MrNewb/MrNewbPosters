@@ -34,3 +34,4 @@ Contributions to this project are encouraged. You can contribute by submitting p
 
 - **Luke**: Credit to Luke for the original version of the script, which included the 3D text feature (now removed). [Luke's GitHub Profile](https://github.com/LukeWasTakenn)
 - **PichotM**: The scene originally appeared as a snippet on the FiveM forums by PichotM. [Original Forum Post](https://forum.cfx.re/t/release-after-hours-poster-world-animation-scene/271076/1)
+-  **PopCornRP**: Mentioned they would like to see this resource be usable again initially inspiring me to attempt to fix it and modernize it. [Popcorns github](https://github.com/alberttheprince)
