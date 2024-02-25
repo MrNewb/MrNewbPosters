@@ -1,20 +1,21 @@
 fx_version 'cerulean'
-
 game 'gta5'
-
+lua54 'yes'
+use_fxv2_oal 'yes'
+name "MrNewbPosterJob"
+author "MrNewb"
+version "1.5.0"
 shared_scripts {
-    '@es_extended/imports.lua'
+	'@ox_lib/init.lua', --- comment this out if you dont for some reason use it?
+	'config.lua'
 }
 
 client_scripts {
-    'client_poster.lua'
+	'bridge/**/client.lua',
+	'client/*.lua',
 }
 
 server_scripts {
-    'server_poster.lua'
-}
-
-dependencies {
-	'es_extended',
-	'mythic_progbar'
+	'bridge/**/server.lua',
+	'server/*.lua',
 }

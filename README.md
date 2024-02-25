@@ -1,31 +1,36 @@
 # MrNewbPosters
-MrNewbPosters
---[[
-temp vars reasons
-posted_posted is used entirely to determine if the 3d text is displayed
 
-on_job_delivery is used to work like a job check but on the un trustworthy client cuz I am ape
+This repository represents an attempt to refine the original MrNewbPosters script. The initial release suffered from various issues, including security vulnerabilities. To address these concerns, I've revisited and started to enhance the script.
 
-placed_posters is used to keep the count , if value doesnt exceed 9? then itl let you keep doing the job, else no no jobo for you o
+## Purpose
 
-PosterCoords redone to be less of a pain
+The primary goal of this project is to improve the functionality, security, and overall quality of the MrNewbPosters script. By updating the codebase, I aim to incorporate modern practices, enhance code readability, and mitigate security risks present in the original version.
 
-constantly running thread removed because it was lame id rather just run a function if needed else fuck it
+## Changes Made
 
-need to either solve the situation of stacking ass tons of posters on the same coord and them flikring OR add enough locations that its *very* un likely to roll the same location or do it the correct way and store it in a table/get closest entity of type and if present deleted
+- Integrated a bridge for compatibility with both QBCore and ESX frameworks.
+- Made minor enhancements to ensure proper functionality within both frameworks.
+- Addressed immediate security concerns.
 
-if to much of pain replace all instances of ```posterModeldefualt``` with the desired prop name 
+## Planned Improvements
 
-will be swappiong some temp vars to statebags at some point.
+While the script is now operational and compatible with both QBCore and ESX, there are still areas for improvement:
 
+- Conduct a comprehensive code cleanup to remove redundant or unnecessary code.
+- Implement modern practices and coding conventions for better maintainability.
+- Enhance security measures to protect against potential vulnerabilities.
+- Optimize performance for better efficiency.
+- Add target support.
+- Add item support.
+- Change positions to global states to prevent overlap.
+- Add job to config to make it casual or a framework job.
+- Finish progressbar support.
 
-***** 
-I have made multiple attempts to reach out to him for permission to use it without response if hehas an issue with my use of it please contact me and I will take it down.
+## Contributing
 
-the animation itself was taken from a post made by PichotM https://forum.cfx.re/t/release-after-hours-poster-world-animation-scene/271076/1
+Contributions to this project are encouraged. You can contribute by submitting pull requests with fixes or enhancements. You can also follow the repository to stay updated on any changes or modifications.
 
-3d text taken from Luke with permission https://github.com/LukeWasTakenn
+## Credits
 
-I have left mythic notify alerts commented out up to you if you wana use them or not
-
--]]
+- **Luke**: Credit to Luke for the original version of the script, which included the 3D text feature (now removed). [Luke's GitHub Profile](https://github.com/LukeWasTakenn)
+- **PichotM**: The scene originally appeared as a snippet on the FiveM forums by PichotM. [Original Forum Post](https://forum.cfx.re/t/release-after-hours-poster-world-animation-scene/271076/1)
