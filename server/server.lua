@@ -26,8 +26,7 @@ end)
 
 RegisterNetEvent("MrNewbPosters:startjob", function()
 	local src = source
-	local player = src
-	local ped = GetPlayerPed(player)
+	local ped = GetPlayerPed(src)
 	local playerCoords = GetEntityCoords(ped)
 	local dstCheck = #(playerCoords - Config.StartPosition)
 	if dstCheck <= 9.0 then
