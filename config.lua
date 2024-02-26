@@ -5,6 +5,7 @@ Config = {
 	Logs = false,												-- set this to the name of the method, pass as string. options are "qb","ox", set to false to disable like Logs = false,		
 	Notify = "ox",												-- set this to the name of the method, pass as string. options are "ox","qb","ok","sd"
 	Progress = "ox",											-- set this to the name of the method, pass as string. options are "ox","qb"
+	Interact = "ox",											-- set this to the name of the method, pass as string. options are "ox","3dtext"
 	StartPosition = vector3(-1059.40, -240.01, 44.01),			-- The position where the job would start
 	PosterCoords = {
 		{x = -1063.016, y = -2543.65, z = 20.62, h = 60.0},

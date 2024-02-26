@@ -11,6 +11,10 @@ end)
 
 local function removePosterCoord()
 	RemoveBlip(posterLocationBlip)
+	local data = {
+		coords = activeCoords,
+	}
+	RemoveActiveSpot(data)
 	getPosterCoord()
 end
 
@@ -43,6 +47,10 @@ function getPosterCoord()
 		BeginTextCommandSetBlipName("STRING")
 		AddTextComponentString("Poster Wall")
 		EndTextCommandSetBlipName(posterLocationBlip)
+		local data = {
+			coords = activeCoords,
+		}
+		CreateActiveSpot(data)
 	end
 end
 

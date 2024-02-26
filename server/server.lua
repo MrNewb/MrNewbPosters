@@ -11,14 +11,14 @@ end
 local function completeJobPay(src, total)
 	if not total or total < 1 then return end
 	AddMoneyToAccount(src, total)
-	removeDataBySource(src)
+	RemoveDataBySource(src)
 end
 
 RegisterNetEvent("MrNewbPosters:verifycount", function(count)
 	local src = source
 	if not count then return print("Cheater pinging event ID# ", src) end
 	cachedData[src] = (cachedData[src] or 0) + count
-	local total = getCountBySource(src)
+	local total = GetCountBySource(src)
 	if total >= 10 then
 		completeJobPay(src, total)
 	end
@@ -26,7 +26,8 @@ end)
 
 RegisterNetEvent("MrNewbPosters:startjob", function()
 	local src = source
-	local ped = GetPlayerPed(src)
+	local player = src
+	local ped = GetPlayerPed(player)
 	local playerCoords = GetEntityCoords(ped)
 	local dstCheck = #(playerCoords - Config.StartPosition)
 	if dstCheck <= 9.0 then
